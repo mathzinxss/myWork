@@ -1,0 +1,79 @@
+/* style.css */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #1b1b1b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 32  px 15px 0;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+
+    color: rgb(166, 67, 185);
+}
+
+li#icon{
+    display: inline-block;
+    padding: 0 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*
+deixa vermelho o 1º item da lista da ul
+nav ul.esconde li:first-child*/
+nav ul.esconde li:not(:first-child){
+    display: none;
+}
+nav ul.mostra li:not(:first-child){
+    display: block;
+}
+
+#produtos{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+footer{
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
