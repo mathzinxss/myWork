@@ -22,9 +22,9 @@
 
 `<sup>` - Texto sobrescrito
 
-#### Citações HTML
+#### **Citações HTML**
 
-###### HTML `<blockquote>` para cotações
+##### **HTML `<blockquote>` para cotações**
 
 O elemento HTML `<blockquote>` define uma seção citada de outra fonte.
 
@@ -38,7 +38,7 @@ For 60 years, WWF has worked to help people and nature thrive. As the world's le
 </blockquote>
 ```
 
-###### HTML `<q>` para citações curtas
+##### **HTML `<q>` para citações curtas**
 
 A tag HTML `<q>` define uma citação curta.
 
@@ -49,7 +49,7 @@ Exemplo:
 <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
 ```
 
-###### HTML `<abbr>` para abreviações
+##### **HTML `<abbr>` para abreviações**
 
 A tag HTML `<abbr>` define uma abreviatura ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 
@@ -62,7 +62,7 @@ Exemplo:
 <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 ```
 
-##### HTML `<endereço>` para informações de contato
+##### **HTML `<endereço>` para informações de contato**
 
 A tag HTML `<address>` define as informações de contato do autor/proprietário de um documento ou artigo.
 
@@ -81,7 +81,7 @@ USA
 </address>
 ```
 
-###### HTML <cite> para título do trabalho
+##### **HTML <cite> para título do trabalho**
 
 A `<cite>` tag HTML define o título de um trabalho criativo (por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).
 
@@ -94,7 +94,7 @@ Exemplo:
 <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 ```
 
-###### HTML `<bdo>` para substituição bidirecional
+##### **HTML `<bdo>` para substituição bidirecional**
 
 BDO significa Substituição bidirecional.
 
