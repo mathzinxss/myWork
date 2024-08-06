@@ -1,0 +1,16 @@
+.p1{
+    font-size: 18px;
+    color: red;
+}
+
+.p2{
+    font-size: 20px;
+    color: blue;
+}
+#espaço{
+    background-color: black;
+    color: aqua;
+    width: 40rem;
+    padding: 5px;
+    margin: 0 50px 0;
+}
