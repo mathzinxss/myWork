@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    padding: 60px 15%;
+    margin: 0;
+    color: #f7f7f7;    
+    background: #121212;
+    font-family: "Euclid Circular A", "Poppins";
+}
+.background{
+    position: fixed;
+    z-index: -1;
+    top: -33vh;
+    left: -100px;
+    right: -100px;
+    height: 50vmax;
+    rotate: 8deg;
+    background: #4f97ff;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 50px 50px 70px;
+    background: #1e1e1e;
+    font-size: 125%;
+}
+.primary{
+    order: -1;
+}
+.primary .card var{
+    font-size: 60px;
+}
+.grid{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.grid > div{
+    width: 100%;
+}
