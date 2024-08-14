@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(135deg, #d6d6d6d2, #17ffece0);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+header h1 {
+    margin: 110px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0 0px;
+    border-radius: 10px;
+}
+nav {
+    background: #333;
+    padding: 0 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    margin: 5px;
+}
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav a:hover {
+    color: #333;
+    background-color: #1ccccc;
+    transform: translateY(-5px);
+}
+.container {
+    max-width: 1200px;
+    margin: 100px auto 20px auto;
+    padding: 0 20px;
+}
+.cartão {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+.cartão:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+.cartão h3 {
+    margin: 16px 0;
+    font-size: 1.5em;
+}
+.cartão p {
+    margin: 0 16px 16px;
+    line-height: 1.6;
+    color: #666;
+}
+.cartão img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+        padding: 10px;
+    }
+    .cartão {
+        margin: 20px 0;
+        padding: 10px;
+    }
+    .cartão h3 {
+        font-size: 1.2em;
+    }
+    .cartão p {
+        font-size: 0.9em;
+    }
+}
