@@ -1,3 +1,3 @@
 # Acesse o link do projeto e veja o resultado
 
-[link do projeto](myWorks/myProjects/projetos/projeto/automobilismo/auto)
+[link do projeto](https://mathzinxss.github.io/myWorks/myProjects/projetos/projeto/automobilismo/auto/)
