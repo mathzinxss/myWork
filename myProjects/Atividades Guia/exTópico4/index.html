@@ -1,36 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Criando sua Primeira Página Web</title>
+    <link rel="stylesheet" type="text/css" href="exT4.css">
 </head>
 
 <body>
+    <header>
+        <h1>Mathias Fernando</h1>
+    </header>
+    <main>
+        <section class="perfil">
+            <img src="perfil.jpg" alt="Foto de João Silva" class="foto-perfil">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou Mathias, um desenvolvedor web apaixonado por criar experiências interativas e funcionais
+                na web.</p>
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: <a href="math983839179@gmail.com">math983839179@gmail.com</a></li>
+                <li>Telefone: (11) 1234-5678</li>
+            </ul>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="https://twitter.com/m4thznxs" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/mathzinxss" target="_blank">GitHub</a></li>
+            </ul>
+            <h3>Hobbies</h3>
+        </section>
+        <section class="hobby">
+            <h2>Minhas Habilidades</h2>
 
-    
-    <script>
-        alert('Seja bem vindo ao exercício de JavaScript.')
-        
-        let nome = ('Mathias')
-        var idade = Number(16)
-        const sexo = ('masculino')
-        
-        console.log(nome, idade, sexo)
-        
-        
-        let contagem = function(){
-            for (let i = 1; i <= 10; i++) {
-                
+            <p>Tenho 16 anos. Sempre gostei de tocar teclado e violino. Amo carros, formula 1 e automobilismo. Gosto de
+                cozinhar e amo escutar música. Nasci em berço evangélico, reconheci a Cristo como meu único e suficiente
+                salvador da minha vida no dia 19/07/2022. Fui batizado nas águas batismais no dia 19/03/2023. Luto
+                Taekowndo e Judô, tenho interesse em voltar para os tatames. Amo jogar minecraft. Gosto muito de
+                basquete, volei, futebol e artes marciais.</p>
+
+        </section>
+
+        <button onclick="alterarEstilo()">Alterar Estilo</button>
+        <button onclick="resetarEstilo()">Resetar Estilo</button>
+
+        <script>
+
+            let estiloOriginal = {
+                color: '',
+                fontSize: '', 
+                backgroundColor: ''
             }
-        }
-        
-        
 
-        
+            function alterarEstilo() {
+
+                // Seleciona o parágrafo pela classe
+                const paragrafos = document.getElementsByClassName("hobby");
+
+                // Como o `getElemetsByClassName` retorna como coleção, selecione o primeiro ítem
+                const paragrafo = paragrafos[0]
+                
+                // Armazenar o estilo original do parágrafo
+                estiloOriginal.color = paragrafo.style.color
+                estiloOriginal.fontSize = paragrafo.style.fontSize
+                estiloOriginal.backgroundColor = paragrafo.style.backgroundColor
+
+                // Altera o estilo do parágrafo
+                paragrafo.style.color = "red"; // Muda a cor do texto para vermelho
+                paragrafo.style.fontSize = "17px"; // Muda o tamanho da fonte
+                paragrafo.style.backgroundColor = "black"; // Muda a cor do fundo para amarelo
+            }
+            function resetarEstilo() {
+                const paragrafos = document.getElementsByClassName("hobby"); 
+                const paragrafo = paragrafos[0]
+
+                paragrafo.style.color = estiloOriginal.color;
+                paragrafo.style.fontSize = estiloOriginal.fontSize;
+                paragrafo.style.backgroundColor = estiloOriginal.backgroundColor;
+            }
+
         </script>
-        <button onclick="setTimeout(console, 1000)"></button>
+    </main>
+    <footer>
+        <p>&copy; 2024 João Silva</p>
+    </footer>
 </body>
 
 </html>
