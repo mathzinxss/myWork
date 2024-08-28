@@ -4,3 +4,8 @@ div{
     border: 2px solid black ;
     margin: 40px;
 }
+body{
+    background-image: url(ny007.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
