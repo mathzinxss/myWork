@@ -1,17 +1,18 @@
 programa {
     funcao inicio() {
         inteiro qntmaca
-        real valor
+        real valor 
+   
 
         escreva("Quantas maças você deseja comprar? ")
         leia(qntmaca)
-        se(qntmaca<12){
+        se (qntmaca<12) {
             valor = (qntmaca*1.30)
-            escreva("O valor da sua compra é de R$", valor)
+            escreva("\nO valor da sua compra é de R$", valor)
         }
-        senao{
+        senao {
             valor = (qntmaca*1.00)
-            escreva("O valor da sua compra é de R$", valor)
+            escreva("\nO valor da sua compra é de R$", valor)
         }
     }
 }
