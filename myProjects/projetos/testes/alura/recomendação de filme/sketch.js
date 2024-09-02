@@ -12,31 +12,40 @@ let campoIdade;
 let campoFantasia;
 
 function setup() {
-    createCanvas(400, 400);
-    campoIdade = createInput("15");
-    campoFantasia = createCheckbox("Gosta de Fantasia ?");
+  createCanvas(800, 400);
+  createSpan("Sua idade:");
+  campoIdade = createInput("5");
+  campoFantasia = createCheckbox(" Gosta de fantasia?");
 }
 
 function draw() {
-  background (220);
+  background("white");
   let idade = campoIdade.value();
-  let gostaDeFantasia = true;
+  let gostaDeFantasia = campoFantasia.checked();
   let recomendacao = geraRecomendacao(idade, gostaDeFantasia);
-  text(recomendacao, width/2, height/2);
+
+  fill(color(76, 0, 115));
+  textAlign(CENTER, CENTER);
+  textSize(38);
+  text(recomendacao, width / 2, height / 2);
 }
 
 function geraRecomendacao(idade, gostaDeFantasia) {
-  if(idade >= 10) {
-      if(idade >= 14) {
+  if (idade >= 10) {
+      if (idade >= 14) {
           return "O menino que descobriu o vento";
       } else {
-          if(gostaDeFantasia){
-              return "As aventuras de Pi";
+          if (gostaDeFantasia) {
+              return "As aventuras de pi";
           } else {
               return "Depois da chuva";
           }
       }
   } else {
-      return "A viagem de Chihiro";
+      if (gostaDeFantasia) {
+          return "A viagem de chihiro";
+      } else {
+          return "O feitiço do tempo";
+      }
   }
 }
