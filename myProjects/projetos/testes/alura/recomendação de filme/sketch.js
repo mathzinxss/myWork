@@ -8,23 +8,35 @@
 // ladrões de bicicleta, 12, drama
 // o menino que descobriu o vento, 14, drama
 
+let campoIdade;
+let campoFantasia;
+
 function setup() {
-  createCanvas(400, 400);
+    createCanvas(400, 400);
+    campoIdade = createInput("15");
+    campoFantasia = createCheckbox("Gosta de Fantasia ?");
 }
 
 function draw() {
-  background(220);
-  let idade = 15; // Exemplo de idade
-  let recomendacao = geraRecomendacao(idade)
+  background (220);
+  let idade = campoIdade.value();
+  let gostaDeFantasia = true;
+  let recomendacao = geraRecomendacao(idade, gostaDeFantasia);
   text(recomendacao, width/2, height/2);
-  let campoIdade;
 }
 
-function geraRecomendacao(idade) {
-  if (idade >= 10) {
-    return "A viagem de Pi";
-  }
-  else {
-    return "A viagem de Chiriro";
+function geraRecomendacao(idade, gostaDeFantasia) {
+  if(idade >= 10) {
+      if(idade >= 14) {
+          return "O menino que descobriu o vento";
+      } else {
+          if(gostaDeFantasia){
+              return "As aventuras de Pi";
+          } else {
+              return "Depois da chuva";
+          }
+      }
+  } else {
+      return "A viagem de Chihiro";
   }
 }
