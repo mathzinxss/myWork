@@ -10,6 +10,16 @@ body {
 
     background-image: url(Wallpaper\ PC\ Simple.jfif);
     background-size: cover;
-    
+    background-repeat: no-repeat;
 
+}
+
+header {
+    height: 60px;
+    background: linear-gradient(to right, red, yellow);
+    padding: 10px 600px;
+    position: fixed; /* ou 'absolute' dependendo do comportamento desejado */
+    bottom: 0;       /* Fixa o header na parte inferior da página */
+    left: 0;
+    right: 0;
 }
