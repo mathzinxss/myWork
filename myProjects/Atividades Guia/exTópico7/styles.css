@@ -1,0 +1,15 @@
+.img {
+
+    background-image: url();
+    padding: 10px 250px;
+    border: rgb(179, 43, 43) 1px solid;
+    margin: 10px;
+}
+
+body {
+
+    background-image: url(Wallpaper\ PC\ Simple.jfif);
+    background-size: cover;
+    
+
+}
