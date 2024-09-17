@@ -3,7 +3,11 @@ programa{
 	
 	funcao inicio(){
 
+        inteiro decisao
+
         escreva("\n\nMenu de Opções\n\n[1] Soma de 2 números\n[2] Subtração de 2 números\n[3] Divisão\n[4] Multiplicação\n[5] Exponenciação\n[6] Tabuada de um número informado\n[7] Resto da divisão\n[8] Sair")
+        escreva("\n\nEscolha uma opção: ")
+        leia (decisao)
 
     escreva("\n\n\n")
     }
