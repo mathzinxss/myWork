@@ -3,25 +3,26 @@ programa{
 	
     funcao inicio() {
         real notaFinal
-        caracter nota
+        cadeia conceito
 
         escreva("Digite sua nota final: ")
         leia(notaFinal)
-        conceitoNota(notaFinal)
+        
+        conceito = conceitoNota(notaFinal)
+        escreva("\nNota: ", conceito)
     }
     funcao cadeia conceitoNota(real notaFinal) {
-        retorne 
         se (notaFinal >= 9.0 e notaFinal <= 10.0) {
-            escreva("\nNota: A")
+            retorne "A"
         }
          se (notaFinal >= 7.0 e notaFinal < 9.0) {
-            escreva("\nNota: B")
+            retorne "B"
         }
         se (notaFinal >= 5.0 e notaFinal < 7.0) {
-            escreva("\nNota: C")
+            retorne "C"
         }
         se (notaFinal >= 0.0 e notaFinal < 5.0) {
-            escreva("\nNota: D")
+            retorne "D"
         }
         
     escreva("\n\n\n")
