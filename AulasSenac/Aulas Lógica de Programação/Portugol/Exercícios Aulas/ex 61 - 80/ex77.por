@@ -1,14 +1,23 @@
 programa{
 	inclua biblioteca Matematica --> m
 	
-    funcao inicio(){
-        real salario[5], somaTotal = 0
+    funcao real somaElementos(real vetorX[]){
+        real somaTotal = 0
+
         para(inteiro i = 0; i < 5; i++) {
-            escreva("Digite o seu salário: ")
-            leia(salario[i])
-            somaTotal = somaTotal + salario[i]
+            somaTotal += vetorX[i]
         }
-        escreva("\nA soma total dos salários é: ", somaTotal)
+        retorne somaTotal
+    }
+
+    funcao inicio() {
+        real salario[5]
+        para(inteiro i = 0; i < 5; i++) {
+            escreva("Digite seu salário: ")
+            leia(salario[i])
+        }
+        real somaTotal = somaElementos(salario)
+        escreva("\nA soma total dos salários é: R$", somaTotal)        
     }
     /*
         Faça uma função que receba um vetor X(20) de reais, por parâmetro, e retorne a soma dos elementos de X.
