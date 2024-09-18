@@ -10,21 +10,19 @@ programa{
         conceitoNota(notaFinal)
     }
     funcao cadeia conceitoNota(real notaFinal) {
-        se (notaFinal >= 9.0 e notaFinal <= 10.0) {
+        retorne se (notaFinal >= 9.0 e notaFinal <= 10.0) {
             escreva("\nNota: A")
         }
-        se (notaFinal >= 7.0 e notaFinal < 9.0) {
+        retorne se (notaFinal >= 7.0 e notaFinal < 9.0) {
             escreva("\nNota: B")
         }
-        se (notaFinal >= 5.0 e notaFinal < 7.0) {
+        retorne se (notaFinal >= 5.0 e notaFinal < 7.0) {
             escreva("\nNota: C")
         }
-        se (notaFinal >= 0.0 e notaFinal < 5.0) {
+        retorne se (notaFinal >= 0.0 e notaFinal < 5.0) {
             escreva("\nNota: D")
         }
-        senao {
-            escreva("\nNúmero informado inválido! Tente novamente")
-        }
+        
     escreva("\n\n\n")
     }
 

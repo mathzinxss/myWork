@@ -1,11 +1,33 @@
-programa{
-	inclua biblioteca Matematica --> m
-	
+programa {
+    inclua biblioteca Matematica --> m
+    
+    funcao inicio() {
+        inteiro numeros[3]
         
-
-    escreva("\n\n\n")
+        para(inteiro i = 0; i < 3; i++) {
+            escreva("Digite um número: ")
+            leia(numeros[i])
+        }
+        
+        conceitoCrescente(crescente)
+        
+        // Exibir os números ordenados
+        para(inteiro i = 0; i < 3; i++) {
+            escreva(numeros[i], " ")
+        }
     }
-    /*
-        Faça um procedimento que recebe por parâmetro, um vetor A(50) de reais e imprima-o ordenado em ordem crescente.
-    */
+    
+    funcao conceitoCrescente(inteiro numeros[]) {
+        inteiro pi, pt, aux
+        
+        para(pi = 0; pi < 2; pi++) {
+            para(pt = pi + 1; pt < 3; pt++) {
+                se(numeros[pi] > numeros[pt]) {
+                    aux = numeros[pt]
+                    numeros[pt] = numeros[pi]
+                    numeros[pi] = aux
+                }
+            }
+        }
+    }
 }
