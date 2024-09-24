@@ -66,3 +66,4 @@ Exercícios sobre Matrizes
     - Uma matriz M1 que seja a soma de N1 e N2
     - Uma matriz M2 que seja a subtração de N1 com N2Escrever as matrizes lidas e calculadas.
 7) Criando um tabuleiro de Jogo da Velha. Crie um tabuleiro de jogo da velha, usando uma matrizes de caracteres (char) 3×3, onde o usuário pede o número da linha (1 até 3) e o da coluna (1 até 3). A cada vez que o usuário entrar com esses dados, colocar um ‘X’ ou ‘O’ no local selecionado.
+8) Criar uma matriz para cadastrar 3 notas, com estas notas calcular a média de 20 alunos. (matriz do tipo: 20 lin x 4 col)
