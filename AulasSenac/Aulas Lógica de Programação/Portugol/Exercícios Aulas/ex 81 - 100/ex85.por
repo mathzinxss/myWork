@@ -6,7 +6,7 @@ programa{
         para (inteiro lin = 0; lin < 5; lin++) {
 			para (inteiro col = 0; col < 2; col++) {
 				mat[i][j]=u.sorteia(0, 99)
-                escreva(mat[i][j]
+                escreva(mat[i][j])
 			}
 		}
     }
