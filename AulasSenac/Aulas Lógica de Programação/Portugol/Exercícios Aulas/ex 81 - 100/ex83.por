@@ -2,7 +2,10 @@ programa{
 	inclua biblioteca Matematica --> m
     funcao inicio() {
 
-        
+        inteiro mat[8][8], num = 100
+        para(inteiro i = 0; i < 8; i++) {
+            para(inteiro j=0;j,
+        }
 
     }
     /*
