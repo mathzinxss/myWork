@@ -1,0 +1,72 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: #e15f41;
+
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.navbar-brand, #header-pr .navbar-brand:hover ,#header-pr .nav .nav-link, #cardapio .nav-link:hover .active {
+    color: white;
+}
+
+.custom-carousel {
+    max-height: 500px; /* Limita a altura do carrossel */
+    overflow: hidden;  /* Garante que o conteúdo não transborde */
+}
+
+.custom-carousel img {
+    height: 100%;
+    object-fit: cover;/* Mant ém a proporção da imagem dentro da altura definida */
+    width: 100%; /* Garante que as imagens preencham a largura do carrossel */
+}
+
+#header-pr .nav .nav-link.active{
+    background-color: white;
+    color: #e15f41;
+}
+
+#cardapio .nav .nav-link.active, #fale-conosco button{
+    background-color:#e15f41;;
+    color:white;
+}
+
+
+.nav-link:hover{
+    color: #e15f41;
+}
+
+h1 span,h2 span , h3 span{
+    color: #e15f41;
+}
+.text-colored{
+    color: #e15f41;
+}
+.section-title {
+    font-family: Pacifico,cursive;
+}
+.ul-redesocial{
+    list-style: none;
+}
+
+.ul-redesocial li{
+    display: inline;
+    padding: 2px;
+}
+
+.ul-redesocial li a{
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    
+    .custom-carousel img {
+        object-fit: none;
+        height: 300px;
+    }
+}
