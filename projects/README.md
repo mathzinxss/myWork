@@ -4,7 +4,7 @@ Acesse o link das Atividades dos Guias de Aprendizado [clicando aqui](https://ma
 
 Acesse o link do meu portfólio (ainda está em fase de desenvolvimento). [clique aqui](https://mathzinxss.github.io/myWorks/projects/portfólio/)
 
-Acesse o link dos meus projetos. [Acesse](https://mathzinxss.github.io/myWorks/myProjects/projetos/)
+Acesse o link dos meus projetos. [Acesse](https://mathzinxss.github.io/myWorks/projetos/)
 
 
 
